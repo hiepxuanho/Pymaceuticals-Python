@@ -1,5 +1,4 @@
 # Pymaceuticals-Python
-# School District Performance Analysis
 
 ## Overview
 This repository contains the analysis of a recent animal study conducted by Pymaceuticals, Inc., focusing on the effectiveness of various drug regimens for treating squamous cell carcinoma (SCC), a common form of skin cancer. The study involved 249 mice undergoing treatment with different medications over a 45-day period.
