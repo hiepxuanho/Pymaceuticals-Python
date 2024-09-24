@@ -54,7 +54,7 @@ This analysis aims to provide the executive team with a clear understanding of t
 
 I got confused at the instruction "Our data should be uniquely identified by Mouse ID and Timepoint". I did know that we definitely needed to use duplicate() function, but I had no idea how to return the right result since the data should be uniquely indentified both Mouse ID and Timepoint. 
 
-After getting explanation from the professor, I realize that inorder to identify duplicate rows where the combination of Mouse ID and Timpoint shows up more than once. However, I only knew how to use duplicated() function with one condition.
+After getting explanation from the professor, I realize that inorder to identify duplicate rows where the combination of Mouse ID and Timepoint shows up more than once. However, I only knew how to use duplicated() function with one condition.
 
 Therefore I had to look up on Chat GPT on how to solve this question. It gave me the result of using duplicated() function with a subset = ["Mouse ID", "Timepoint"]. In this way, we can find the duplicate not only on Mouse ID but also Timepoint as well.
 
