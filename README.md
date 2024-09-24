@@ -1,6 +1,57 @@
 # Pymaceuticals-Python
-Applying what I learned about Matplotlib to a real-world situation and dataset. 
+# School District Performance Analysis
 
+## Overview
+This repository contains the analysis of a recent animal study conducted by Pymaceuticals, Inc., focusing on the effectiveness of various drug regimens for treating squamous cell carcinoma (SCC), a common form of skin cancer. The study involved 249 mice undergoing treatment with different medications over a 45-day period.
+
+## Objective
+The goal is to clean data tables and different plots for analysis. The primary goal is to compare the performance of the company's drug of interest, Capomulin, against other treatment regimens.
+
+
+## Tasks
+1. **Data Aggregation**: Prepare the data (datasets merg, removing duplicates, data cleaning), generate summary statistics (mean, median, var, sem, std), creating bar, pie charts, calculate Quartiles, find Outliers, and create a Box Plot.
+2. **Trend Identification**: Analyze key metrics to uncover drugs' performance, including:
+   - Highlighting the tumor development trends associated with each treatment.
+   - Comparison Capomulin, against other treatment regimens.
+3. **Insights Generation**: Summary statistics for the treatment effects, Effectiveness of Capomulin.
+
+## Analysis Approach
+- **Summary staistics for the treatment effects**: Compare how effectiveness each drug type affect the tumor growth.
+- **Data Visualization**: Use visual tools to illustrate the equality in study, reducing the bias in result. Displaying correlation coefficient to prove a strong positive relationship between mouse weihgt and average tumor volume.
+- **Statistical Analysis of Capomulin vs other drugs**: Outliers could either indicate extreme cases of drug inefficiency or effectiveness, or they might suggest data entry errors. Capomulin treatment, the IQR shows that central tendency is fairly consistent and less variability.
+  
+## Tools and Technologies
+- **Python**: For data manipulation, analysis, and visualization.
+- **Pandas**: For efficient data handling and aggregation.
+- **Matplotlib**: For creating meaningful visualizations of the data.
+- **Jupyter Notebook**: For an interactive analysis environment.
+
+## Expected Outcomes
+This analysis aims to provide the executive team with a clear understanding of the clinical study results:
+- The efficacy of Capomulin in treating compared to other treatments.
+- Promising results of Capomulin, further studies could explore dosage optimization, long-term effects.
+
+## How to Use This Repository
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/hiepxuanho/Pandas-challenge
+    
+    ```
+2. Install/Imported the required dependencies:
+    ```bash
+    pip install --upgrade ipython
+    pip install --upgrade notebook
+
+    import matplotlib.pyplot as plt
+    import pandas as pd
+    ```
+3. Open and run the Jupyter notebooks to explore the analysis and visualizations.
+    ```bash
+    conda activate dev
+    jupyter notebook
+    ```
+
+## Note:
 
 I got confused at the instruction "Our data should be uniquely identified by Mouse ID and Timepoint". I did know that we definitely needed to use duplicate() function, but I had no idea how to return the right result since the data should be uniquely indentified both Mouse ID and Timepoint. 
 
