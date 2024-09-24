@@ -29,3 +29,27 @@ I had to look up Chat GPT to find out what function to drop a specific Mouse ID.
 cleaned_mouse_data = mouse_study_complete[~mouse_study_complete['Mouse ID'].isin(duplicate_mouse_id)]
 
 /----------------------------------------------------/
+
+I had a problem while calculating the IQR by using a for loop. The TA and professor gave me the hints and showed me how to find the Quartiles first and IQR = upper bound - lowerer bound. As for the Outliers, I used Chat GPT to find the result.
+
+/------------Chat GPT code---------------------------/
+
+outliers = tumor_volumes[(tumor_volumes < lower_bound) | (tumor_volumes > upper_bound)]
+
+/----------------------------------------------------/
+
+When Generating a scatter plot of mouse weight vs. the average observed tumor volume for the entire Capomulin regimen. We firstly needed to find the Capomulin regimen data, then the average mouse weight as well as average tumor vol.
+
+For Capomulin data, using loc with the condition ['Drug Regimen'] == 'Capomulin'. And for the two average values, we use groupby the Mouse ID and then use mean() funciton to calculate ['Tumor Volume (mm3)'] and ['Weight (g)']. In addtion, without adding (numeric_only=True) codes wouldn't run.
+
+I had to look up how to find the linear regression model.
+
+/------------Chat GPT code---------------------------/
+
+(slope, intercept, rvalue, pvalue, stderr) = st.linregress(avg_mouse_weight, avg_tumor_vol)
+
+regress = slope * avg_mouse_weight + intercept
+
+/----------------------------------------------------/
+
+
